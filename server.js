@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const {resolve} = require("path");
+
 const express = require("express");
 const cors = require("cors");
 const chunkdb = require("./lib/chunk-db");
@@ -19,7 +21,7 @@ const conf = {
     index_length: 10
 };
 
-const chunks = chunkdb();
+const chunks = chunkdb(resolve(process.cwd(), "work"));
 const chunkStream = getChunkStream("ffmpeg-csv", process.stdin);
 
 const updateStream = chunkStream
