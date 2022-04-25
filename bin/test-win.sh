@@ -17,4 +17,4 @@
         -f ssegment -segment_list_flags live \
             -segment_list_type csv -segment_time 1 -segment_list pipe:1 \
             work/out-3-%03d.ts \
-    | node ./ahead-server.js
+| npm start

@@ -21,14 +21,11 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "morgan": "^1.10.0",
-    "mz": "^2.7.0",
     "request": "^2.88.2",
-    "request-promise-native": "^1.0.9",
-    "scramjet": "^4.36.6"
+    "request-promise-native": "^1.0.9"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
-    "eslint-config-scramjet": "^3.0.0",
     "eslint-plugin-node": "^11.1.0"
   }
 }
